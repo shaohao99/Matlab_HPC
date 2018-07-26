@@ -1,0 +1,13 @@
+#!/bin/bash -l
+
+#$ -pe omp 1
+#$  -l h_rt=12:00:00
+#$ -N matlab_mfile
+
+module load matlab/2016a
+
+#matlab -nodisplay -r "addpath /usr1/scv/shaohao/training/matlab/src/exercises-hpc; hello"
+matlab -nodisplay -singleCompThread -r "hello; exit"
+#matlab -nodisplay -r "hello; exit"
+#matlab -nodisplay -nojvm -nosplash -r "addpath /my/custom/path; fname"
+
