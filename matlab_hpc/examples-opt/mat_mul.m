@@ -1,7 +1,6 @@
 clear all;
 
 n = 500
-%n = 1000
 
 for j=1:1:n         % initialize data
   for i=1:1:n
